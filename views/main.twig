@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+		<title>MON CV</title>
+	</head>
+	<body>
+
+		{# <!-------------------------------------- NAVIGATION -----------------------------------------------------------------------> #}
+		<header>
+			<h1><img src="./img/logo .png" alt="logo" width="290px" height="170px"></h1>
+			<nav>
+
+				<ul>
+					<li id="home">HOME</li>
+					<li>
+						ABOUT ME</li>
+					<li>
+						PORTFOLIO</li>
+					<li>
+						CONTACT ME</li>
+				</ul>
+			</nav>
+			{# <!-- -----------------------------------------SCROLL BAR------------------------------------------------------------------------------- --> #}
+			<div class="header">
+				<div class="progress-container">
+				  <div class="progress-bar" id="myBar"></div>
+				</div>
+			  </div>
+			  
+			  <div>content...</div>
+		</header>
+
+		{# <!-- ----------------------------------------------------CONTAINER 1------------------------------------------------------------------------ --> #}
+		<main>
+			<section class="containerone">
+				<div>
+                <p class="green" >CREATIVE DEVELOPER FULLSTACK </p>
+                <br>
+                <hr>
+                <br>
+				    <p class="green"> I'M A CREATIVE DEVELOPER</p>
+                    <br>
+				<p class="white"> Hello everyone, I'm Eddy and I'm a fullstack developer <br>
+I have and good knowledge in HTML, CSS and JavaScript
+I'm still learning the job. <br> You can check some of my work lower in the page.
+Let me know if you are interested !</p>
+<br>
+
+<a href="./img/EddyBoughanmiCV.pdf"target="_blank"><img src="./img/Group 3.png" width="100px" height="100px" alt="cv"></a>
+
+				</div>
+                <div class="bitmoji">
+					<img id="imagebitmoji" src="./img/bitmoji.png" alt="imagebitmoji">
+				</div>
+			</div>
+
+		</section>
+	</body>
+</main>
+{# <!-- --------------------------------------------------------CONTAINER 2---------------------------------------------------------------------------------- --> #}
+<div>
+<H2 id="skills">MY SKILLS ( IN PROGRESS )</H2>
+</div>
+
+<div class="containertwo">
+
+
+<div><img id="html" src="./img/html-5.png" alt="html" width="100" height="100"> <p>HTML</p></div> 
+<div>
+	<img src="./img/css-3.png" alt="css" width="100" height="100"><p>CSS</p>
+</div>
+<div>
+	<img src="./img/js.png" alt="js" width="100" height="100"><p>JAVASCRIPT</p>
+</div>
+<div>
+	<img src="./img/bootstrap.png" alt="bootstrap" width="100" height="100"><p>BOOTSTRAP</p>
+</div>
+<div>
+	<img src="./img/nodeJSpicture.png" width="100" height="100" alt="nodeJSpicture"><p>NODE JS</p>
+</div>
+<div>
+	<img src="./img/twig.png" width="100" height="100" alt="twiglogo"><p>TWIG</p>
+</div>
+<div>
+	<img src="./img/figma.png" alt="figma" width="100" height="100"><p>FIGMA</p>
+</div>
+</div>
+
+<div>
+
+</div>
+    {# <!-- ------------------------------------------------CONTAINER 3------------------------------------------------------------------------ --> #}
+    <div class="containerthree">
+
+	<div><h2 id="education">EDUCATION</h2></div>
+<div class="backgroundblack">
+		
+<div><img id="lyceepicture" src="./img/lyceelaviste.jpg" alt="html" width="100" height="150"> <BR></BR> <p>LA VISTE HIGH SCHOOL <br> ( Graduated with honor )</p></div> 
+<div>
+	<img id="inhni" src="./img/INHNI_CFA_PACA.jpg" alt="css" width="100" height="150"> <BR></BR> <p>INHNI CERTIFICATE OF TEAM LEADER</p>
+</div>
+<div>
+	<img id="ecoleri7" src="./img/ecoleri7.jpg" alt="js" width="300" height="150"> <BR></BR> <p>RI7 GRADUATE SCHOOL OF DIGITAL</p>
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+<h2 class="experience"> EXPERIENCE </h2>
+
+{# <!-- --------------------------------------------- CONTAINER 4------------------------------------------------------------------------------- --> #}
+<div class="containerfour">  
+
+	<div class="timeline">
+		<div class="container left">
+		  <div class="content">
+			<h2> October 2022 - August 2023</h2>
+
+			<br>
+			<p> Licence Web Developer and Applications Conceptor</p>
+		  </div>
+		</div>
+		<div class="container right">
+		  <div class="content">
+			<h2>January 2020 - Present</h2>
+			<p>Intelcia ( SFR Business )</p><br>
+			<p>I was a specialist in telecommunications on both fiber and DSL networks. 
+				I have extensive experience in setting up and maintaining connections, 
+				as well as troubleshooting any network-related issues. 
+				Moreover, I am experienced in the latest technologies and can provide advice and guidance on the best solution 
+				for any network requirements.</p>
+		  </div>
+		</div>
+		<div class="container left">
+			<div class="content">
+			  <h2> ONET PROPRETE ET SERVICE ( 2013 - 2014 )</h2>
+			  <br>
+			  <p> Licence Web Developer and Applications Conceptor</p>
+			</div>
+		  </div>
+	  </div>
+	  
+</div>
+
+
+
+{# <!-- ----------------------------------------------------- CONTAINER 5----------------------------------------------------------------------- --> #}
+<div class="containerfive"> 
+
+	<h2 class="portfolio"> PORTFOLIO</h2>
+
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	{% for project in projects %}
+		<div class="mySlides fade">
+	  	<div class="numbertext"></div>
+	  	<img src="./uploads/{{project.img}}" style="width:100%">
+	  	<div class="text">{{project.name}}</div>
+	</div>
+	{% endfor %}
+	
+  
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+
+  </div>
+
+  </div>
+{# <!-- --------------------------------------------FORM CONTACT ------------------------------------------------------------------------------- --> #}
+  <div class="contactcontainer">
+	<div class="formpolice" style="text-align:center">
+	  <h2>Contact Me</h2>
+	  <br>
+	  <p>If you want send me a comment or anything else, please contact me below</p>
+	  <br>
+	</div>
+	<form>      
+		<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+		<input name="email" type="text" class="feedback-input" placeholder="Email" />
+		<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+		<input type="submit" value="SUBMIT"/>
+	</form>
+</div>
+{# <!-- ----------------------------------------------- FOOTER  -------------------------------------------------------------------- --> #}
+<footer>
+<div class="containersix">
+
+	<footer class="footer" >
+		<div class="waves">
+			<div class="wave" id="wave1"></div>
+			<div class="wave" id="wave2"></div>
+			<div class="wave" id="wave3"></div>
+			<div class="wave" id="wave4"></div>
+		</div>
+	
+		<ul class="menu">
+			<li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">About Me</a></li>
+			<li class="menu__item"><a class="menu__link" href="#">Contact Me</a></li>
+	</ul>
+		<p style="opacity: 0.75;">COPYRIGHT 2023 </p>
+	
+	</footer>
+
+
+
+
+
+
+
+</div>
+</body>
+
+<script src="./js/main.js"></script>
+
+</html>
