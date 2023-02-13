@@ -157,7 +157,7 @@ Let me know if you are interested !</p>
 {# <!-- ----------------------------------------------------- CONTAINER 5----------------------------------------------------------------------- --> #}
 <div class="containerfive"> 
 
-	<h2 class="portfolio"> PORTFOLIO 1</h2>
+	<h2 class="portfolio"> PORTFOLIO </h2>
 
 	<!-- Slideshow container -->
 <div class="slideshow-container">
@@ -166,7 +166,7 @@ Let me know if you are interested !</p>
 	{% for project in projects %}
 		<div class="mySlides fade">
 	  	<div class="numbertext"></div>
-	  	<img src="./uploads/{{project.img}}" style="width:100%">
+	  	<img src="/uploads/{{project.img}}" style="width:100%">
 	  	<div class="text">{{project.name}}</div>
 	</div>
 	{% endfor %}
