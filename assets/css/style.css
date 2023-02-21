@@ -48,10 +48,10 @@ li:hover{
     justify-content: space-around;
 }
 
-.buttonlogo{
-  background-image: url(../img/Group-3.svg);
-  height: 100px;
-  width: 100px;
+.cvbutton:hover{
+  height: 150px;
+  width: 150px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;;
 }
 
 #imagebitmoji{
@@ -72,6 +72,8 @@ hr{
 h2{
     padding-top: 100px;
 }
+
+/************************************************************* containertwo ************************************************************************** */
 .containertwo{
     display: flex;
     text-align: center;
@@ -82,6 +84,13 @@ h2{
 .containertwo p{
     color: white;
 }
+
+.containertwo img:hover{
+    width: 150px;
+    height: 150px;
+    transition:2s,2s,2s, 2s;
+}
+/* ************************************************************* CONTAINERTHREE **************************************************************************** */
 .containerthree{
     background-image: linear-gradient(to right, #000000,#48AD8F);
     padding-top: 100px;
@@ -96,6 +105,7 @@ h2{
     color:white ;
     background-color: #121816;
     padding-top: 220px;
+    display: block;
 }
 span{
     color: white;
@@ -123,9 +133,11 @@ span{
 .white{
     color: white;
 }
+
+/* ********************************************************* CONTAINERFOUR ********************************************************************************* */
 .containerfour{
     background-color:#121816;
-    height: 1500px;
+    height: 1060px;
 }
 .experience{
     color:#0FDFA1 ;
@@ -138,10 +150,14 @@ span{
     text-align: center;
     padding-top: 50px;
 }
+
+/* *********************************************************** CONTAINERFIVE *************************************************************************** */
 .containerfive{
     background-image: linear-gradient(to right, #000000,#48AD8F);
     height: 800px;
 }
+
+/* ********************************************************* CONTAINERSIX *********************************************************************************** */
 .containersix{
     background-color:#121816;
 }
@@ -596,4 +612,8 @@ padding-bottom:100px;
 padding-top: 140px;
 }
 
+/* **************************************************** responsive ************************************************************************************* */
 
+@media screen and (min-width: 600px) {
+  
+}
